@@ -6,4 +6,4 @@ RUN pip install pystrich
 
 RUN touche requirements.txt
 
-CMD [ "python", "./my_script.py" ]
+CMD [ "python", "./__main__.py" ]
