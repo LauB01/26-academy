@@ -1,7 +1,9 @@
-FROM ubuntu:16.04
+FROM python:3
 
-RUN apt-get update
+ADD __main__.py /
 
-RUN apt-get install -y _main_.py
+RUN pip install pystrich
 
-RUN touch requirement.txt
+RUN touche requirements.txt
+
+CMD [ "python", "./my_script.py" ]
