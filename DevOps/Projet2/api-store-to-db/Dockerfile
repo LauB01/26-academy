@@ -4,6 +4,6 @@ ADD __main__.py /
 
 ADD _version.py /
 
-RUN pip install -r requirements.txt
+ADD pip install -r requirements.txt
 
 CMD [ "python", "./__main__.py" ]
