@@ -2,8 +2,6 @@ FROM python:3
 
 ADD _version.py /
 
-RUN pip install pystrich
-
-RUN touche requirements.txt
+RUN pip install requirements.txt
 
 CMD [ "python", "./_version.py" ]
